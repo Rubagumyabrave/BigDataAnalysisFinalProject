@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34681852/README.md)
 # Distributed Multi-Model Analytics for E-commerce Data
 
 AUCA Big Data Analytics, final project (October 2026).
