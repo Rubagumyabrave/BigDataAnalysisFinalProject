@@ -1,0 +1,9 @@
+# Host-side requirements: only needed to run dataset_generator.py (Python 3.11).
+#   python -m venv .venv
+#   .venv\Scripts\activate          (Windows)   |   source .venv/bin/activate   (Linux/macOS)
+#   pip install -r requirements.txt
+#
+# Everything else (MongoDB, HBase, Spark scripts, charts) runs inside the Jupyter
+# container, whose Python packages are listed in jupyter/requirements.txt.
+Faker==40.44.0
+numpy==2.4.6

@@ -1,0 +1,7 @@
+# Extra packages for the Jupyter container, installed by jupyter/Dockerfile.
+# The base image quay.io/jupyter/pyspark-notebook:spark-4.3.0 already provides
+# Python, Java, PySpark 4.3.0, pandas, numpy and matplotlib.
+pymongo
+happybase
+thrift
+seaborn

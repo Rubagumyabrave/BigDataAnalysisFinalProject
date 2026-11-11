@@ -1,0 +1,7 @@
+.venv/
+data/
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+dataset_generator_notebook_backup.json
+parquet/

@@ -1,0 +1,42 @@
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: ecom_mongo
+    ports:
+      - "27017:27017"
+    command: ["--wiredTigerCacheSizeGB", "1"]
+    volumes:
+      - mongo_data:/data/db
+    mem_limit: 1500m
+
+  hbase:
+    image: harisekhon/hbase:2.1
+    container_name: ecom_hbase
+    hostname: hbase
+    ports:
+      - "16010:16010"
+      - "9090:9090"
+    environment:
+      HBASE_HEAPSIZE: "1536"
+    volumes:
+      - hbase_data:/hbase-data
+    mem_limit: 2500m
+
+  jupyter:
+    build: ./jupyter
+    container_name: ecom_jupyter
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    environment:
+      JUPYTER_TOKEN: "bigdata"
+    volumes:
+      - ./:/home/jovyan/work
+    depends_on:
+      - mongo
+      - hbase
+    mem_limit: 4g
+
+volumes:
+  mongo_data:
+  hbase_data:

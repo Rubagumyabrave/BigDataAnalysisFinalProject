@@ -1,0 +1,2 @@
+segment,sessions,viewed_product,added_to_cart,reached_checkout,purchased,view_to_cart_pct,cart_to_checkout_pct,checkout_to_purchase_pct,overall_pct,revenue_per_1000_sessions
+ALL SESSIONS,200000,197462,129924,57906,40488,65.8,44.6,69.9,20.24,156325.0
