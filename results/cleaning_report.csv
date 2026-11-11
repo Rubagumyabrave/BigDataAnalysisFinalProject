@@ -1,0 +1,14 @@
+dataset,check,rows,of_total,action,pct
+sessions,duplicate session_id removed,0,200000,dropped,0.0
+sessions,null timestamps / user_id / referrer,0,200000,none found,0.0
+sessions,sessions containing zero-duration page views,9814,200000,"flagged (11,362 views counted in n_zero_dur_views)",4.91
+sessions,cart/checkout/confirmation page with an empty cart,43754,200000,flagged flag_empty_cart_flow,21.88
+sessions,confirmation page without a purchase,34440,200000,flagged flag_confirm_no_purchase,17.22
+transactions,duplicate transaction_id removed,0,100000,dropped,0.0
+transactions,subtotal differs from sum of items,0,100000,none found,0.0
+transactions,total != subtotal - discount,0,100000,none found,0.0
+transactions,no items / non-positive total,0,100000,none found,0.0
+transactions,not linked to a session (session_id null),59512,100000,"kept, is_linked=false (excluded from funnel)",59.51
+users,last_active earlier than registration,0,10000,none found,0.0
+products,inactive products,234,5000,"kept, is_sellable=false",4.68
+products,zero stock,376,5000,"kept, is_sellable=false",7.52

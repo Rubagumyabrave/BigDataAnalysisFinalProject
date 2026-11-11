@@ -1,0 +1,4 @@
+segment,sessions,viewed_product,added_to_cart,reached_checkout,purchased,view_to_cart_pct,cart_to_checkout_pct,checkout_to_purchase_pct,overall_pct,revenue_per_1000_sessions
+desktop,66757,65883,43191,19202,13510,65.6,44.5,70.4,20.24,156524.0
+tablet,66752,65940,43575,19494,13561,66.1,44.7,69.6,20.32,156189.0
+mobile,66491,65639,43158,19210,13417,65.8,44.5,69.8,20.18,156263.0
